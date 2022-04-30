@@ -9,7 +9,7 @@
   <link rel="stylesheet" type="text/css" href="css/style.css" />
   <!-- modernizr enables HTML5 elements and feature detects -->
   <script type="text/javascript" src="js/modernizr-1.5.min.js"></script>
-  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <script src="https://d3js.org/d3.v6.js"></script>
 </head>
 
 <body>
@@ -32,6 +32,12 @@
         <li><img src="images/5.jpeg" width="600" height="300" alt="photo_five" /></li>
         <li><img src="images/6.jpeg" width="600" height="300" alt="photo_six" /></li>
       </ul>
+
+      <div class="map">
+        <!-- Create an element where the map will take place -->
+        <svg id="my_dataviz" width="400" height="300"></svg>
+      </div>
+
       <div id="sidebar_container">
         <div class="sidebar">
           <h3>Latest News</h3>
@@ -70,6 +76,7 @@
   </div>
   <!-- javascript at the bottom for fast page loading -->
   <script type="text/javascript" src="js/Vis.js"></script>
+  <script type="text/javascript" src="js/Map.js"></script>
   <script type="text/javascript" src="js/jquery.min.js"></script>
   <script type="text/javascript" src="js/jquery.easing.min.js"></script>
   <script type="text/javascript" src="js/jquery.lavalamp.min.js"></script>
